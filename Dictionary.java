@@ -27,6 +27,7 @@ public class Dictionary<K extends Comparable<K>, V> {
 		this.list = list;
 	}
 	/**
+	 * Add entry to the end of the array list.
 	 * @param key
 	 * @param value
 	 */
@@ -34,6 +35,11 @@ public class Dictionary<K extends Comparable<K>, V> {
 		Entry<K, V> entry = new Entry<K, V>(key, value);
 		list.add(entry);
 	}
+	/**
+	 * Add entry into array list in ordered position.
+	 * @param key
+	 * @param value
+	 */
 	public void addSorted(K key, V value) {
 		ArrayList<Entry<K, V>> newList = new ArrayList<Entry<K, V>>();
 		boolean added = false;
